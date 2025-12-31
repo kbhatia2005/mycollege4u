@@ -18,10 +18,10 @@
 }
 
 @keyframes bgChange {
-  0% { background-image: url("images/sx4.png"); }
-  33% { background-image: url("images/sx5.png"); }
-  66% { background-image: url("images/sx2.png"); }
-  100% { background-image: url("images/sx.png"); }
+  0% { background-image: url("images/sx.png"); }
+  33% { background-image: url("images/sx2.png"); }
+  66% { background-image: url("images/sx.png"); }
+  100% { background-image: url("images/sx2.png"); }
 }
 
 

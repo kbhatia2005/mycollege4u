@@ -115,13 +115,11 @@
                 <p class="hero-process-subtitle">From on-ground outreach to admission-ready students</p>
 
                 <div class="hero-process-preview-vertical">
-                    <div class="preview-step">Outreach</div>
-                    <div class="preview-step">Data Collection</div>
+                    
                     <div class="preview-step">Lead Nurturing</div>
-                    <div class="preview-step">Verification</div>
+                    
                     <div class="preview-step">Admission-Ready Students</div>
-                    <div class="preview-step">Admissions</div>
-                    <div class="preview-step">Careers</div>
+                    
                 </div>
             </div>
         </div>
@@ -405,69 +403,344 @@ updateCountdown();
     </script>
    
 
-      <section class="auto-glow-section">
+    <section class="glass-grid-section">
     <div class="container">
-        <h2 class="main-title">What Makes Us Different</h2>
-        <h3 class="sub-title">Why Our Outreach Model Works</h3>
-        
-        <div class="sexy-grid">
-            <div class="sexy-card card-1">
-                <div class="card-content">
-                    <span class="num">01</span>
-                    <h4 class="card-head">On-Ground <br>Verified</h4>
-                    <p class="card-desc">100% Physical Validation</p>
-                    <div class="arrow-icon">↘</div>
-                </div>
+        <div class="header-area">
+            <h2 class="main-title">What Makes Us Different</h2>
+            <div class="title-divider"></div>
+            <h3 class="sub-title">Why Our Outreach Model Works</h3>
+        </div>
+
+        <div class="glass-grid">
+            <div class="glass-card">
+                <span class="card-num">01</span>
+                <h4>Physical Validation</h4>
+                <p>100% on-ground verification to ensure every lead is authentic and document-ready.</p>
             </div>
 
-            <div class="sexy-card card-2">
-                <div class="card-content">
-                    <span class="num">02</span>
-                    <h4 class="card-head">Trained <br>Experts</h4>
-                    <p class="card-desc">Pro Counselling</p>
-                    <div class="arrow-icon">↘</div>
-                </div>
+            <div class="glass-card">
+                <span class="card-num">02</span>
+                <h4>Expert Counseling</h4>
+                <p>Trained professionals specializing in student psychology and career mapping.</p>
             </div>
 
-            <div class="sexy-card card-3">
-                <div class="card-content">
-                    <span class="num">03</span>
-                    <h4 class="card-head">Lead <br>Nurturing</h4>
-                    <p class="card-desc">Multi-Stage Flow</p>
-                    <div class="arrow-icon">↘</div>
-                </div>
+            <div class="glass-card">
+                <span class="card-num">03</span>
+                <h4>Strategic Nurturing</h4>
+                <p>Multi-stage engagement flow designed to build trust and institutional interest.</p>
             </div>
 
-            <div class="sexy-card card-4">
-                <div class="card-content">
-                    <span class="num">04</span>
-                    <h4 class="card-head">Strong <br>Conversion</h4>
-                    <p class="card-desc">Admission Focus</p>
-                    <div class="arrow-icon">↘</div>
-                </div>
+            <div class="glass-card">
+                <span class="card-num">04</span>
+                <h4>Higher Conversions</h4>
+                <p>Eliminating non-serious noise to focus exclusively on enrollment-ready candidates.</p>
             </div>
 
-            <div class="sexy-card card-5">
-                <div class="card-content">
-                    <span class="num">05</span>
-                    <h4 class="card-head">Smart <br>Segments</h4>
-                    <p class="card-desc">Targeted Data</p>
-                    <div class="arrow-icon">↘</div>
-                </div>
+            <div class="glass-card">
+                <span class="card-num">05</span>
+                <h4>Smart Segmentation</h4>
+                <p>Data categorized by course and intent to maximize your marketing ROI.</p>
             </div>
 
-            <div class="sexy-card card-6">
-                <div class="card-content">
-                    <span class="num">06</span>
-                    <h4 class="card-head">Ready <br>Students</h4>
-                    <p class="card-desc">Quality Leads</p>
-                    <div class="arrow-icon">↘</div>
+            <div class="glass-card">
+                <span class="card-num">06</span>
+                <h4>Admission Ready</h4>
+                <p>Pre-informed students ready for final documentation and fee processing.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .glass-grid-section {
+        background: #0b1d33;
+        padding: 50px 20px;
+        font-family: 'Inter', sans-serif;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .container { max-width: 1000px; margin: 0 auto; }
+
+    .main-title { 
+        color: #fff; 
+        font-size: 26px; 
+        font-weight: 800; 
+        text-transform: uppercase; 
+        margin-bottom: 5px; 
+    }
+    
+    .title-divider {
+        width: 50px;
+        height: 3px;
+        background: #d4af37;
+        margin: 10px auto;
+    }
+
+    .sub-title { color: #d4af37; font-size: 14px; margin-bottom: 40px; opacity: 0.9; }
+
+    .glass-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 15px;
+    }
+
+    .glass-card {
+        /* Fade Transparent Blue + White */
+        background: rgba(255, 255, 255, 0.95);
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(200, 225, 255, 0.85) 100%);
+        padding: 20px;
+        border-radius: 10px;
+        position: relative;
+        text-align: left;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        min-height: 120px; /* Reduced length significantly */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: transform 0.3s ease;
+    }
+
+    /* Sequential Pop-up Animation */
+    @keyframes autoPopup {
+        0%, 100% { transform: translateY(0) scale(1); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+        50% { transform: translateY(-12px) scale(1.03); box-shadow: 0 20px 35px rgba(212, 175, 55, 0.4); border-color: #d4af37; }
+    }
+
+    .glass-card {
+        animation: autoPopup 6s infinite ease-in-out;
+    }
+
+    /* Delay logic for baari-baari effect */
+    .glass-card:nth-child(1) { animation-delay: 0s; }
+    .glass-card:nth-child(2) { animation-delay: 1s; }
+    .glass-card:nth-child(3) { animation-delay: 2s; }
+    .glass-card:nth-child(4) { animation-delay: 3s; }
+    .glass-card:nth-child(5) { animation-delay: 4s; }
+    .glass-card:nth-child(6) { animation-delay: 5s; }
+
+    .card-num {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 24px;
+        font-weight: 900;
+        color: rgba(11, 29, 51, 0.1);
+    }
+
+    .glass-card h4 {
+        color: #0b1d33;
+        font-size: 16px;
+        font-weight: 800;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+    }
+
+    .glass-card p {
+        color: #334155;
+        font-size: 13px;
+        line-height: 1.4;
+        margin: 0;
+        font-weight: 500;
+    }
+
+    @media (max-width: 600px) {
+        .glass-grid { grid-template-columns: 1fr; }
+        .glass-card { min-height: 100px; }
+    }
+</style>
+
+
+
+
+
+<section class="roadmap-section">
+    <div class="roadmap-overlay"></div>
+    
+    <div class="container">
+        <div class="header-group">
+            <h2 class="section-title">How We Work</h2>
+            <p class="section-subtitle">Our 6-Step Strategic Roadmap from Outreach to Success</p>
+        </div>
+
+        <div class="roadmap-container">
+            <div class="roadmap-step">
+                <div class="step-circle">1</div>
+                <div class="step-content">
+                    <h4>Outreach Activity</h4>
+                    <p>On-ground physical presence and student engagement.</p>
+                </div>
+                <div class="connector-line"></div>
+            </div>
+
+            <div class="roadmap-step">
+                <div class="step-circle">2</div>
+                <div class="step-content">
+                    <h4>Data Collection</h4>
+                    <p>Capturing authentic student information & interests.</p>
+                </div>
+                <div class="connector-line"></div>
+            </div>
+
+            <div class="roadmap-step">
+                <div class="step-circle">3</div>
+                <div class="step-content">
+                    <h4>Lead Nurturing</h4>
+                    <p>Continuous engagement through expert counseling.</p>
+                </div>
+                <div class="connector-line"></div>
+            </div>
+
+            <div class="roadmap-step">
+                <div class="step-circle">4</div>
+                <div class="step-content">
+                    <h4>Verified Leads</h4>
+                    <p>Strict quality checks and document verification.</p>
+                </div>
+                <div class="connector-line"></div>
+            </div>
+
+            <div class="roadmap-step">
+                <div class="step-circle">5</div>
+                <div class="step-content">
+                    <h4>Admission Ready</h4>
+                    <p>Students ready with intent and fee processing.</p>
+                </div>
+                <div class="connector-line"></div>
+            </div>
+
+            <div class="roadmap-step">
+                <div class="step-circle highlight">6</div>
+                <div class="step-content">
+                    <h4>Career Success</h4>
+                    <p>Final enrollment and long-term career mapping.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+<style>
+    .roadmap-section {
+        position: relative;
+        padding: 80px 20px;
+        background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80'); /* Professional office background */
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: white;
+        font-family: 'Inter', sans-serif;
+        overflow: hidden;
+    }
+
+    /* Transparent Blue Overlay */
+    .roadmap-overlay {
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background: rgba(11, 29, 51, 0.9); /* Dark blue overlay */
+        z-index: 1;
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .header-group { text-align: center; margin-bottom: 60px; }
+    .section-title { font-size: 32px; font-weight: 800; text-transform: uppercase; color: #ffeb3b; }
+    .section-subtitle { opacity: 0.8; margin-top: 10px; font-size: 16px; }
+
+    .roadmap-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .roadmap-step {
+        flex: 1;
+        min-width: 160px;
+        text-align: center;
+        position: relative;
+        animation: fadeInScale 0.8s ease forwards;
+        opacity: 0;
+    }
+
+    .roadmap-step:nth-child(1) { animation-delay: 0.1s; }
+    .roadmap-step:nth-child(2) { animation-delay: 0.3s; }
+    .roadmap-step:nth-child(3) { animation-delay: 0.5s; }
+    .roadmap-step:nth-child(4) { animation-delay: 0.7s; }
+    .roadmap-step:nth-child(5) { animation-delay: 0.9s; }
+    .roadmap-step:nth-child(6) { animation-delay: 1.1s; }
+
+    @keyframes fadeInScale {
+        from { opacity: 0; transform: scale(0.8); }
+        to { opacity: 1; transform: scale(1); }
+    }
+
+    .step-circle {
+        width: 50px;
+        height: 50px;
+        background: #ffeb3b;
+        color: #0b1d33;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 900;
+        font-size: 20px;
+        margin: 0 auto 20px;
+        box-shadow: 0 0 15px rgba(255, 235, 59, 0.5);
+        position: relative;
+        z-index: 3;
+    }
+
+    .step-circle.highlight {
+        background: #00d2ff;
+        color: #fff;
+        box-shadow: 0 0 20px rgba(0, 210, 255, 0.6);
+    }
+
+    .connector-line {
+        position: absolute;
+        top: 25px;
+        left: 60%;
+        width: 80%;
+        height: 2px;
+        background: rgba(255, 255, 255, 0.2);
+        z-index: 2;
+    }
+
+    .step-content h4 {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: #ffeb3b;
+    }
+
+    .step-content p {
+        font-size: 13px;
+        line-height: 1.4;
+        opacity: 0.7;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 992px) {
+        .roadmap-container { flex-direction: column; align-items: center; gap: 40px; }
+        .connector-line {
+            width: 2px;
+            height: 40px;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .roadmap-step { width: 100%; }
+    }
+</style>
 <style>
     /* Section Background - Blue */
     .auto-glow-section { 
