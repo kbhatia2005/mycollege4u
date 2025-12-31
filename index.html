@@ -1,0 +1,1668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hero Section</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <header class="hero">
+    <div class="bg-slider"></div>
+
+    <div class="header-bg"></div>
+
+    <div class="fade-overlay"></div>
+
+    <nav class="navbar">
+    <div class="logo-container">
+        <img src="images/lnd.png" alt="Logo" class="header-logo">
+        <span class="company-name">mycollege4u</span>
+    </div>
+    
+    <a href="tel:9015033852" class="contact-btn-link">
+        <button class="contact-btn">Contact</button>
+    </a>
+</nav>
+
+<style>
+/* --- UPDATED ZOOM-IN LOGO STYLES --- */
+
+/* Header background ko thoda flexible banaya */
+.header-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 70px; /* Fixed height ki jagah min-height */
+    height: auto;
+    background: #0b1d33;
+    z-index: 1;
+}
+
+.navbar {
+      position: relative;
+      z-index: 10;
+      background: #0b1d33;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 0px;
+      height: 70px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    }
+
+.logo-container {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      height: 100%;
+    }
+
+
+.header-logo {
+      height: 130%; /* Box se bahar niklega */
+      width: auto;
+      transform: scale(1.4); /* ZOOM LOOK */
+      transform-origin: left center;
+      z-index: 11;
+      filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.3));
+    }
+
+.header-logo:hover {
+    transform: scale(1.1); /* Hover par thoda aur zoom hoga */
+}
+
+.company-name {
+    color: #d4af37;
+    font-size: 30px; /* Text bhi thoda bada kiya */
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    line-height: 1;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+    .header-logo {
+        height: 60px; /* Mobile par itna zoom kafi hai */
+        margin: -5px 0;
+    }
+    .company-name {
+        font-size: 16px;
+    }
+    .navbar {
+        padding: 5px 20px;
+        min-height: 70px;
+    }
+}
+</style>
+
+    <div class="hero-content">
+        <div class="left">
+            <h1>India’s Largest Outreach-Driven Admission + Leads Ecosystem</h1>
+            <p>From On-Ground Outreach to Verified Admission Ready Leads, powered by a professional, tech-driven team.</p>
+
+            <div class="buttons">
+                <button class="btn-primary" onclick="openEnquireForm()">Get Started Now</button>
+                <button class="btn-outline" onclick="openEnquireForm()">Request Verified Leads</button>
+            </div>
+
+            <div class="hero-process-preview-container">
+                <h3 class="hero-process-title">Our Outreach-to-Admission Journey</h3>
+                <p class="hero-process-subtitle">From on-ground outreach to admission-ready students</p>
+
+                <div class="hero-process-preview-vertical">
+                    <div class="preview-step">Outreach</div>
+                    <div class="preview-step">Data Collection</div>
+                    <div class="preview-step">Lead Nurturing</div>
+                    <div class="preview-step">Verification</div>
+                    <div class="preview-step">Admission-Ready Students</div>
+                    <div class="preview-step">Admissions</div>
+                    <div class="preview-step">Careers</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<style>
+/* CSS mein ye naye updates add karein */
+
+.header-logo {
+    height: 45px; /* Logo ki height control karein */
+    width: auto;
+    display: block;
+}
+
+.contact-btn-link {
+    text-decoration: none;
+}
+
+.contact-btn {
+    border: 1px solid #d4af37;
+    background: transparent;
+    color: #d4af37;
+    padding: 8px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background: #d4af37;
+    color: #0b1d33;
+}
+
+/* Hero Content alignment fix */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    min-height: calc(100vh - 80px); /* adjusted for header-bg height */
+    display: flex;
+    align-items: flex-start;
+    padding: 40px 60px;
+}
+
+/* Button pointer cursor */
+.btn-primary, .btn-outline {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.btn-primary:active, .btn-outline:active {
+    transform: scale(0.95);
+}
+
+/* Mobile responsive fixes */
+@media (max-width: 768px) {
+    .header-logo {
+        height: 35px; /* Mobile par logo thoda chota */
+    }
+    .navbar {
+        padding: 0 20px;
+    }
+    .hero-content {
+        padding: 40px 25px;
+    }
+}
+</style>
+
+<script>
+    // Ye function check karega ki aapka popup open ho jaye
+    function openEnquireForm() {
+        const popup = document.getElementById('contactPopup');
+        if (popup) {
+            popup.style.display = 'flex';
+        } else {
+            console.error("Popup ID 'contactPopup' nahi mila. Check karein ki popup code page par hai.");
+        }
+    }
+</script>
+ 
+      
+      
+
+  </div>
+</section>
+<section class="trust-section">
+  <h2 class="trust-title">Our Outreach Impact</h2>
+
+  <div class="trust-grid">
+
+    <div class="trust-box" data-count="3000">
+      <span class="trust-number">0</span>
+      <p>School Visits</p>
+    </div>
+
+    <div class="trust-box" data-count="100">
+      <span class="trust-number">0</span>
+      <p>College Visits</p>
+    </div>
+
+    <div class="trust-box" data-count="5000">
+      <span class="trust-number">0</span>
+      <p>Career Counselling Sessions</p>
+    </div>
+
+    <div class="trust-box" data-count="100">
+      <span class="trust-number">0</span>
+      <p>Education Fairs Executed</p>
+    </div>
+
+    <div class="trust-box" data-count="5000000">
+      <span class="trust-number">0</span>
+      <p>Student Data Collected</p>
+    </div>
+
+    <div class="trust-box" data-count="200000">
+      <span class="trust-number">0</span>
+      <p>Verified & Nurtured Leads</p>
+    </div>
+
+  </div>
+</section>
+
+
+<script>
+  const counters = document.querySelectorAll('.trust-number');
+  let started = false;
+  
+  function startCounting() {
+    if (started) return;
+  
+    const section = document.getElementById('trustNumbers');
+    const sectionTop = section.getBoundingClientRect().top;
+    const screenHeight = window.innerHeight;
+  
+    if (sectionTop < screenHeight - 100) {
+      counters.forEach(counter => {
+        const target = +counter.getAttribute('data-target');
+        let count = 0;
+        const speed = target / 120;
+  
+        const updateCount = () => {
+          count += speed;
+          if (count < target) {
+            counter.innerText = Math.floor(count).toLocaleString();
+            requestAnimationFrame(updateCount);
+          } else {
+            counter.innerText = target.toLocaleString() + "+";
+          }
+        };
+        updateCount();
+      });
+  
+      started = true;
+    }
+  }
+  
+  window.addEventListener('scroll', startCounting);
+  </script>
+  
+      
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+<!-- Countdown Reminder Box -->
+<div id="reminder-box">
+  <div class="reminder-header">
+      <span>Important Reminder</span>
+      <span id="close-btn">&times;</span> <!-- close button -->
+  </div>
+
+  <div class="countdown">
+      <div class="time-box sky">
+          <span id="days">00</span>
+          <p>Days</p>
+      </div>
+      <div class="time-box black">
+          <span id="hours">00</span>
+          <p>Hours</p>
+      </div>
+      <div class="time-box sky">
+          <span id="minutes">00</span>
+          <p>Minutes</p>
+      </div>
+      <div class="time-box black">
+          <span id="seconds">00</span>
+          <p>Seconds</p>
+      </div>
+  </div>
+
+  <p class="reminder-text">
+      "Don't Settle for Noise! Access Premium Admission-Ready Students at an exclusive discounted price!".<br>
+      Book your slot .
+  </p>
+  <a href="tel:9015033852" class="call-btn">Call Now</a>
+</div>
+
+<script>
+// Show reminder box 1 second after page load
+window.addEventListener('load', () => {
+  setTimeout(() => {
+      const box = document.getElementById('reminder-box');
+      box.style.display = 'block';
+      box.style.opacity = '1';
+  }, 1000);
+});
+
+// Close button functionality
+document.getElementById('close-btn').addEventListener('click', () => {
+  document.getElementById('reminder-box').style.display = 'none';
+});
+
+// Countdown timer to end of month
+const endDate = new Date();
+endDate.setMonth(endDate.getMonth());
+endDate.setDate(new Date(endDate.getFullYear(), endDate.getMonth() + 1, 0).getDate());
+endDate.setHours(23,59,59,999);
+
+function updateCountdown() {
+  const now = new Date().getTime();
+  const distance = endDate - now;
+
+  const days = Math.floor(distance / (1000*60*60*24));
+  const hours = Math.floor((distance % (1000*60*60*24)) / (1000*60*60));
+  const minutes = Math.floor((distance % (1000*60*60)) / (1000*60));
+  const seconds = Math.floor((distance % (1000*60)) / 1000);
+
+  document.getElementById('days').innerText = days.toString().padStart(2,'0');
+  document.getElementById('hours').innerText = hours.toString().padStart(2,'0');
+  document.getElementById('minutes').innerText = minutes.toString().padStart(2,'0');
+  document.getElementById('seconds').innerText = seconds.toString().padStart(2,'0');
+}
+
+setInterval(updateCountdown, 1000);
+updateCountdown();
+</script>
+
+  
+
+  <script>
+    const boxes = document.querySelectorAll('.trust-box');
+    
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          startCount(entry.target);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.4 });
+    
+    boxes.forEach(box => observer.observe(box));
+    
+    function startCount(box) {
+      const numberEl = box.querySelector('.trust-number');
+      const target = +box.getAttribute('data-count');
+      let count = 0;
+      const speed = target / 80;
+    
+      const update = () => {
+        count += speed;
+        if (count < target) {
+          numberEl.innerText = Math.floor(count).toLocaleString();
+          requestAnimationFrame(update);
+        } else {
+          numberEl.innerText = target.toLocaleString() + "+";
+        }
+      };
+      update();
+    }
+    </script>
+   
+
+      <section class="auto-glow-section">
+    <div class="container">
+        <h2 class="main-title">What Makes Us Different</h2>
+        <h3 class="sub-title">Why Our Outreach Model Works</h3>
+        
+        <div class="sexy-grid">
+            <div class="sexy-card card-1">
+                <div class="card-content">
+                    <span class="num">01</span>
+                    <h4 class="card-head">On-Ground <br>Verified</h4>
+                    <p class="card-desc">100% Physical Validation</p>
+                    <div class="arrow-icon">↘</div>
+                </div>
+            </div>
+
+            <div class="sexy-card card-2">
+                <div class="card-content">
+                    <span class="num">02</span>
+                    <h4 class="card-head">Trained <br>Experts</h4>
+                    <p class="card-desc">Pro Counselling</p>
+                    <div class="arrow-icon">↘</div>
+                </div>
+            </div>
+
+            <div class="sexy-card card-3">
+                <div class="card-content">
+                    <span class="num">03</span>
+                    <h4 class="card-head">Lead <br>Nurturing</h4>
+                    <p class="card-desc">Multi-Stage Flow</p>
+                    <div class="arrow-icon">↘</div>
+                </div>
+            </div>
+
+            <div class="sexy-card card-4">
+                <div class="card-content">
+                    <span class="num">04</span>
+                    <h4 class="card-head">Strong <br>Conversion</h4>
+                    <p class="card-desc">Admission Focus</p>
+                    <div class="arrow-icon">↘</div>
+                </div>
+            </div>
+
+            <div class="sexy-card card-5">
+                <div class="card-content">
+                    <span class="num">05</span>
+                    <h4 class="card-head">Smart <br>Segments</h4>
+                    <p class="card-desc">Targeted Data</p>
+                    <div class="arrow-icon">↘</div>
+                </div>
+            </div>
+
+            <div class="sexy-card card-6">
+                <div class="card-content">
+                    <span class="num">06</span>
+                    <h4 class="card-head">Ready <br>Students</h4>
+                    <p class="card-desc">Quality Leads</p>
+                    <div class="arrow-icon">↘</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Section Background - Blue */
+    .auto-glow-section { 
+        padding: 10px 10px; 
+        background: #0b1d33; /* Deep Professional Blue */
+        color: #fff; 
+        font-family: 'Arial Black', sans-serif; 
+        text-align: center;
+    }
+
+    .main-title { font-size: 24px; font-weight: 900; text-transform: uppercase; margin-bottom: 5px; }
+    .sub-title { font-size: 14px; margin-bottom: 30px; font-weight: bold; color: #d4af37; }
+
+    .sexy-grid { 
+        display: grid; 
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 10px; 
+        max-width: 600px; 
+        margin: 0 auto; 
+    }
+
+    /* Box Style - Yellow */
+    .sexy-card {
+        background: #c5c4b8; /* Bright Yellow */
+        border-radius: 12px; 
+        padding: 15px 8px; 
+        position: relative;
+        border: 2px solid #000;
+        transition: all 0.3s ease;
+    }
+
+    /* Text Style - Bold Black */
+    .card-content { text-align: left; color: #000; }
+    .num { font-size: 12px; font-weight: 900; }
+    .card-head { font-size: 13px; font-weight: 900; margin: 8px 0; line-height: 1.1; text-transform: uppercase; color: #000; }
+    .card-desc { font-size: 10px; font-weight: 800; color: #222; margin: 0; }
+    .arrow-icon { position: absolute; bottom: 5px; right: 5px; font-size: 18px; color: #055714; font-weight: 900; }
+
+    /* Animation: Baari-baari Glow aur Pop-up */
+    @keyframes autoPopGlow {
+        0%, 15% { transform: scale(1); box-shadow: none; border-color: #000; }
+        5% { transform: scale(1.1); box-shadow: 0 0 20px #fff; border-color: #fff; z-index: 10; }
+    }
+
+    .sexy-card {
+        animation: autoPopGlow 6s infinite ease-in-out;
+    }
+
+    /* Delays taaki ek ke baad ek glow ho */
+    .card-1 { animation-delay: 0s; }
+    .card-2 { animation-delay: 1s; }
+    .card-3 { animation-delay: 2s; }
+    .card-4 { animation-delay: 3s; }
+    .card-5 { animation-delay: 4s; }
+    .card-6 { animation-delay: 5s; }
+
+    /* Hover par cursor le jane par bhi work karega */
+    .sexy-card:hover {
+        transform: scale(1.15) !important;
+        box-shadow: 0 0 25px #fff !important;
+        z-index: 100;
+        animation: none; /* Hover par auto-animation ruk jayegi */
+    }
+
+    @media (max-width: 480px) {
+        .sexy-grid { gap: 8px; }
+        .card-head { font-size: 11px; }
+        .card-desc { font-size: 8px; }
+    }
+</style>
+
+<section class="rich-vertical-section">
+    <div class="container">
+        <h2 class="model-title">Our Proven Model</h2>
+        
+        <div class="rich-timeline">
+            <div class="rich-step">
+                <div class="node-container">
+                    <div class="node">01</div>
+                    <div class="line-bg"><div class="snake-filler f-1"></div></div>
+                </div>
+                <div class="rich-card">
+                    <h4>Outreach Activities</h4>
+                    <p>We execute extensive on-ground activities including school & college visits, education fairs, and seminars.</p>
+                </div>
+            </div>
+
+            <div class="rich-step">
+                <div class="node-container">
+                    <div class="node">02</div>
+                    <div class="line-bg"><div class="snake-filler f-2"></div></div>
+                </div>
+                <div class="rich-card">
+                    <h4>Structured Data Collection</h4>
+                    <p>Capturing high-quality data: academic history, course preferences, and parent contact details.</p>
+                </div>
+            </div>
+
+            <div class="rich-step">
+                <div class="node-container">
+                    <div class="node">03</div>
+                    <div class="line-bg"><div class="snake-filler f-3"></div></div>
+                </div>
+                <div class="rich-card">
+                    <h4>Professional Lead Nurturing</h4>
+                    <p>Expert counselling calls, strategic WhatsApp updates, and targeted email campaigns.</p>
+                </div>
+            </div>
+
+            <div class="rich-step">
+                <div class="node-container">
+                    <div class="node">04</div>
+                    <div class="line-bg"><div class="snake-filler f-4"></div></div>
+                </div>
+                <div class="rich-card">
+                    <h4>Lead Verification</h4>
+                    <p>Rigorous interest validation, eligibility criteria checks, and course matching.</p>
+                </div>
+            </div>
+
+            <div class="rich-step final">
+                <div class="node-container">
+                    <div class="node">🎯</div>
+                </div>
+                <div class="rich-card highlight">
+                    <h4>Admission-Ready Students</h4>
+                    <p>Delivering high-intent students prepared for the final admission process.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .rich-vertical-section {
+        padding: 25px 15px;
+        background: #f6f7f8;
+        font-family: 'Segoe UI', sans-serif;
+        overflow: hidden;
+    }
+
+    .model-title {
+        color: #0b1d33;
+        text-align: center;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+
+    .rich-timeline { max-width: 500px; margin: 0 auto; }
+
+    .rich-step {
+        display: flex;
+        gap: 20px;
+        opacity: 0; /* JS handle karega scroll par */
+        transform: translateX(-30px);
+        transition: all 0.6s ease-out;
+    }
+
+    .rich-step.show-animation { opacity: 1; transform: translateX(0); }
+
+    .node-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40px;
+    }
+
+    .node {
+        width: 35px; height: 35px;
+        background: #d4af37; color: #000;
+        border-radius: 50%;
+        display: flex; align-items: center; justify-content: center;
+        font-weight: 900; font-size: 14px;
+        z-index: 2; border: 2px solid #fffdfd;
+    }
+
+    /* Saamp wali line ka background */
+    .line-bg {
+        width: 4px; flex-grow: 1;
+        background: rgba(255,255,255,0.1);
+        position: relative; overflow: hidden;
+        margin: -2px 0;
+    }
+
+    /* Snake/Filler Animation */
+    .snake-filler {
+        position: absolute;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #ffeb3b;
+        box-shadow: 0 0 10px #ffeb3b;
+        animation: snakeFlow 4s infinite linear;
+    }
+
+    @keyframes snakeFlow {
+        0% { top: -100%; }
+        100% { top: 100%; }
+    }
+
+    /* Har line ke liye delay taaki saamp chalta hua dikhe */
+    .f-1 { animation-delay: 0s; }
+    .f-2 { animation-delay: 0.8s; }
+    .f-3 { animation-delay: 1.6s; }
+    .f-4 { animation-delay: 2.4s; }
+
+    .rich-card {
+        background: #d4af37;
+        padding: 18px;
+        border-radius: 12px;
+        margin-bottom: 25px;
+        flex: 1;
+        border: 1.5px solid #ffffff; /* No heavy shadows */
+        text-align: left;
+    }
+
+    .rich-card h4 { margin: 0 0 5px 0; font-weight: 900; color: #0b1d33; font-size: 15px; }
+    .rich-card p { margin: 0; color: #05111f; font-size: 13px; line-height: 1.4; font-weight: 600; }
+
+    /* Final Card Green */
+    .rich-card.highlight { background: #1a692c; border-color: #fff; }
+    .rich-card.highlight h4, .rich-card.highlight p { color: #fff; }
+    .final .node { background: #1a692c; color: #fff; border-color: #fff; }
+
+    @media (max-width: 480px) {
+        .rich-card h4 { font-size: 14px; }
+        .rich-card p { font-size: 12px; }
+
+        
+    }
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show-animation');
+            }
+        });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('.rich-step').forEach((card) => {
+        observer.observe(card);
+    });
+});
+
+
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show-animation');
+            }
+        });
+    }, { threshold: 0.2 }); // Jab 20% section dikhega tab animation start hogi
+
+    // Saare cards ko select karke observe karna
+    document.querySelectorAll('.sexy-card, .rich-step').forEach((card) => {
+        observer.observe(card);
+    });
+});
+</script>
+
+<style>
+/* --- ANIMATION CSS --- */
+/* Shuruat mein cards chupe rahenge aur thode niche honge */
+.sexy-card, .rich-step {
+    opacity: 0;
+    transform: translateY(50px) scale(0.9);
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Jab user scroll karke wahan pahuchega, tab ye class add hogi */
+.show-animation {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+/* Ek ke baad ek aane ke liye delays (Stagger effect) */
+.sexy-grid .sexy-card:nth-child(1) { transition-delay: 0.1s; }
+.sexy-grid .sexy-card:nth-child(2) { transition-delay: 0.2s; }
+.sexy-grid .sexy-card:nth-child(3) { transition-delay: 0.3s; }
+.sexy-grid .sexy-card:nth-child(4) { transition-delay: 0.4s; }
+.sexy-grid .sexy-card:nth-child(5) { transition-delay: 0.5s; }
+.sexy-grid .sexy-card:nth-child(6) { transition-delay: 0.6s; }
+
+/* Outreach Model Cards ke liye delays */
+.rich-timeline .rich-step:nth-child(1) { transition-delay: 0.1s; }
+.rich-timeline .rich-step:nth-child(2) { transition-delay: 0.3s; }
+.rich-timeline .rich-step:nth-child(3) { transition-delay: 0.5s; }
+.rich-timeline .rich-step:nth-child(4) { transition-delay: 0.7s; }
+.rich-timeline .rich-step:nth-child(5) { transition-delay: 0.9s; }
+
+
+
+.show-animation {
+    /* Animation trigger hone ke baad continuous glow start hoga */
+    animation: continuousGlow 3s infinite ease-in-out;
+}
+
+</style>
+
+<div id="contactPopup" class="popup-overlay">
+    <div class="popup-content">
+        <button class="close-btn" onclick="closePopup()">&times;</button>
+        
+        <div class="popup-header">
+            <h3>Enquire Now</h3>
+            <p>Need any help or want to reach us? Fill the form below!</p>
+        </div>
+
+        <form action="https://formsubmit.co/astronomerkaran2005@gmail.com" method="POST" class="enquire-form">
+            <div class="input-group">
+                <input type="text" name="name" placeholder="Contact Person Name" required>
+            </div>
+            <div class="input-group">
+                <input type="email" name="email" placeholder="Email Address" required>
+            </div>
+            <div class="input-group">
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+            </div>
+            <div class="input-group">
+                <label style="color: #0b1d33; font-weight: bold; font-size: 12px;">Looking for leads in:</label>
+                <select name="lead_type" required>
+                    <option value="" disabled selected>Select Category</option>
+                    <option value="UG">UG</option>
+                    <option value="PG">PG</option>
+                    <option value="Diploma">Diploma</option>
+                    <option value="MBA">MBA</option>
+                    <option value="Medical">Medical</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <button type="submit" class="submit-btn">Submit Now</button>
+        </form>
+    </div>
+</div>
+
+<style>
+    /* Overlay Background */
+    .popup-overlay {
+        position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+        background: rgba(11, 29, 51, 0.9); /* Aapka blue color with transparency */
+        display: none; align-items: center; justify-content: center;
+        z-index: 10000; backdrop-filter: blur(8px);
+    }
+
+    /* Popup Box */
+    .popup-content {
+        background: #ffffff; width: 90%; max-width: 420px;
+        border-radius: 15px; position: relative; padding: 35px 25px;
+        box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+        border-top: 10px solid #0b1d33;
+        text-align: center;
+        animation: popupZoom 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    @keyframes popupZoom {
+        from { transform: scale(0.5); opacity: 0; }
+        to { transform: scale(1); opacity: 1; }
+    }
+
+    /* Close/Cut Button */
+    .close-btn {
+        position: absolute; top: 12px; right: 18px;
+        background: #0b1d33; color: #fff; border: none;
+        width: 30px; height: 30px; border-radius: 50%;
+        font-size: 20px; cursor: pointer; line-height: 1;
+    }
+
+    .popup-header h3 { color: #0b1d33; font-size: 26px; font-weight: 900; margin-bottom: 5px; text-transform: uppercase; }
+    .popup-header p { color: #555; font-size: 14px; margin-bottom: 25px; font-weight: 600; }
+
+    /* Form Fields */
+    .enquire-form .input-group { margin-bottom: 15px; }
+    .enquire-form input, .enquire-form select {
+        width: 100%; padding: 12px 15px; border: 2px solid #e1e1e1;
+        border-radius: 8px; font-size: 15px; outline: none; transition: 0.3s;
+        box-sizing: border-box;
+    }
+
+    .enquire-form input:focus, .enquire-form select:focus { border-color: #0b1d33; background: #f0f4f8; }
+
+    /* Submit Button */
+    .submit-btn {
+        width: 100%; background: #0b1d33; color: #fff;
+        padding: 14px; border: none; border-radius: 8px;
+        font-size: 16px; font-weight: bold; cursor: pointer;
+        transition: 0.3s; margin-top: 10px; text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .submit-btn:hover { background: #d4af37; transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+</style>
+
+<script>
+    // Function to close the popup
+    function closePopup() {
+        document.getElementById('contactPopup').style.display = 'none';
+    }
+
+    // Har baar page load hone par ye chalega
+    window.addEventListener('load', function() {
+        setTimeout(function() {
+            document.getElementById('contactPopup').style.display = 'flex';
+        }, 10000); // 10000ms = 10 seconds
+    });
+
+    // Bahar click karne par bhi close ho jaye (Optional)
+    window.onclick = function(event) {
+        let popup = document.getElementById('contactPopup');
+        if (event.target == popup) {
+            closePopup();
+        }
+    }
+</script>
+
+<section class="mobile-premium-section">
+    <div class="overlay-fade">
+        <h2 class="title-sexy">Core Outreach</h2>
+        <div class="sexy-line"></div>
+        <p class="subtitle-sexy">Outreach Verticals We Handle</p>
+
+        <div class="glass-grid">
+            <div class="mobile-card card-animate">
+                <div class="icon-circle">🏫</div>
+                <div class="card-text">
+                    <h4>School Programs</h4>
+                    <p>On-ground engagement.</p>
+                </div>
+            </div>
+            <div class="mobile-card card-animate">
+                <div class="icon-circle">🎓</div>
+                <div class="card-text">
+                    <h4>College Drives</h4>
+                    <p>Campus presence.</p>
+                </div>
+            </div>
+            <div class="mobile-card card-animate">
+                <div class="icon-circle">💡</div>
+                <div class="card-text">
+                    <h4>Career Counselling</h4>
+                    <p>Expert guidance.</p>
+                </div>
+            </div>
+            <div class="mobile-card card-animate">
+                <div class="icon-circle">🎪</div>
+                <div class="card-text">
+                    <h4>Fairs & Expos</h4>
+                    <p>Regional events.</p>
+                </div>
+            </div>
+            <div class="mobile-card card-animate">
+                <div class="icon-circle">👨‍👩‍👧</div>
+                <div class="card-text">
+                    <h4>Parent Interaction</h4>
+                    <p>Trust-building.</p>
+                </div>
+            </div>
+            <div class="mobile-card card-animate gold-border">
+                <div class="icon-circle gold-bg">📈</div>
+                <div class="card-text">
+                    <h4>CRM Tracking</h4>
+                    <p>Lead monitoring.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="partnership-container card-animate">
+            <h3 class="partner-title">Who We Work With</h3>
+            <div class="sexy-line small-line"></div>
+            
+            <div class="slider-wrapper">
+                <div class="slider-track" id="sliderTrack">
+                    <div class="partner-box">
+                        <div class="img-frame"><img src="https://images.unsplash.com/photo-1541339907198-e08756ebafe1?auto=format&fit=crop&w=300"></div>
+                        <span class="box-label">University</span>
+                    </div>
+                    <div class="partner-box">
+                        <div class="img-frame"><img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=300"></div>
+                        <span class="box-label">Institutes</span>
+                    </div>
+                    <div class="partner-box">
+                        <div class="img-frame"><img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=300"></div>
+                        <span class="box-label">Skill Programs</span>
+                    </div>
+                    <div class="partner-box">
+                        <div class="img-frame"><img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=300"></div>
+                        <span class="box-label">Study Abroad</span>
+                    </div>
+                    <div class="partner-box">
+                        <div class="img-frame"><img src="https://images.unsplash.com/photo-1524178232457-3bb2449b382a?auto=format&fit=crop&w=300"></div>
+                        <span class="box-label">Training</span>
+                    </div>
+                    <div class="partner-box">
+                        <div class="img-frame"><img src="https://images.unsplash.com/photo-1541339907198-e08756ebafe1?auto=format&fit=crop&w=300"></div>
+                        <span class="box-label">University</span>
+                    </div>
+                    <div class="partner-box">
+                        <div class="img-frame"><img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=300"></div>
+                        <span class="box-label">Institutes</span>
+                    </div>
+                    <div class="partner-box">
+                        <div class="img-frame"><img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=300"></div>
+                        <span class="box-label">Skill Programs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* ... (Base Styles same as previous) ... */
+    .mobile-premium-section { width: 100%; min-height: 100vh; background: url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800') no-repeat center center/cover; background-attachment: fixed; overflow-x: hidden; }
+    .overlay-fade { padding: 50px 15px; background: linear-gradient(to bottom, #0b1d33 30%, rgba(11, 29, 51, 0.85) 100%); min-height: 100vh; text-align: center; }
+    .title-sexy { color: #ffeb3b; font-size: 28px; font-weight: 900; text-transform: uppercase; margin-bottom: 8px; }
+    .sexy-line { height: 2px; width: 60px; background: linear-gradient(90deg, transparent, #ffeb3b, transparent); margin: 0 auto 15px; }
+    .small-line { width: 100px; background: linear-gradient(90deg, transparent, #ffffff, transparent); margin-bottom: 25px; }
+    .subtitle-sexy { color: #fff; font-size: 13px; opacity: 0.9; margin-bottom: 30px; }
+
+    .glass-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; max-width: 600px; margin: 0 auto; }
+    .mobile-card { background: rgba(255, 255, 255, 0.08); backdrop-filter: blur(8px); border: 1px solid rgba(255, 255, 255, 0.1); padding: 15px 10px; border-radius: 15px; display: flex; flex-direction: column; align-items: center; }
+    .icon-circle { width: 40px; height: 40px; background: rgba(255,255,255,0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; margin-bottom: 8px; }
+    .card-text h4 { color: #fff; font-size: 13px; margin: 0 0 4px; font-weight: 800; }
+    .card-text p { color: #ccc; font-size: 10px; margin: 0; }
+    .gold-border { border: 1px solid #ffeb3b; }
+
+    /* --- SLIDER STYLES WITH POP-UP LOGIC --- */
+    .partnership-container { margin-top: 80px; width: 100%; }
+    .partner-title { color: #fff; font-size: 16px; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 5px; font-weight: 700; }
+
+    .slider-wrapper { 
+        width: 100%; 
+        overflow: hidden; 
+        padding: 40px 0; /* Space for the pop-up/scale effect */
+        perspective: 1000px;
+    }
+
+    .slider-track {
+        display: flex;
+        width: calc(180px * 8); 
+        gap: 25px;
+        animation: scrollBoxes 20s linear infinite;
+    }
+
+    .partner-box {
+        width: 150px;
+        min-height: 190px;
+        background: #fff;
+        padding: 10px;
+        border-radius: 15px;
+        flex-shrink: 0;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 0.4s ease, box-shadow 0.4s ease, border 0.4s ease;
+        border: 2px solid transparent;
+    }
+
+    /* This class will be added by JS to the center box */
+    .partner-box.is-center {
+        transform: scale(1.2); /* POP UP EFFECT */
+        box-shadow: 0 15px 35px rgba(255, 235, 59, 0.3);
+        border: 2px solid #ffeb3b;
+        z-index: 10;
+    }
+
+    .img-frame { width: 100%; height: 140px; border-radius: 10px; overflow: hidden; }
+    .img-frame img { width: 100%; height: 100%; object-fit: cover; }
+    .box-label { color: #0b1d33; font-size: 18px; font-weight: 800; margin-top: 12px; }
+
+    @keyframes scrollBoxes {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(calc(-175px * 5)); }
+    }
+
+    .card-animate { opacity: 0; transform: translateY(20px); transition: all 0.5s ease-out; }
+    .show-animation { opacity: 1 !important; transform: translateY(0) !important; }
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Scroll Reveal logic
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show-animation');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.card-animate').forEach((card, index) => {
+            card.style.transitionDelay = (index * 0.1) + 's';
+            observer.observe(card);
+        });
+
+        // CENTER POP-UP LOGIC
+        const sliderTrack = document.getElementById('sliderTrack');
+        const boxes = document.querySelectorAll('.partner-box');
+        const centerX = window.innerWidth / 2;
+
+        function checkCenter() {
+            boxes.forEach(box => {
+                const rect = box.getBoundingClientRect();
+                const boxCenter = rect.left + rect.width / 2;
+                
+                // Agar box ka center screen ke center ke 80px range mein hai
+                if (Math.abs(boxCenter - centerX) < 80) {
+                    box.classList.add('is-center');
+                } else {
+                    box.classList.remove('is-center');
+                }
+            });
+            requestAnimationFrame(checkCenter);
+        }
+
+        requestAnimationFrame(checkCenter);
+    });
+</script>
+<section class="pro-offer-section card-animate">
+    <div class="pro-header">
+        <h2 class="pro-title">What We Offer</h2>
+        <div class="pro-line"></div>
+    </div>
+
+    <div class="pro-content">
+        <div class="pro-item">
+            <h3>Lead Accuracy</h3>
+            <p>Course-wise aur category-wise precise data filtration. Hum leads ko verify karte hain taaki conversion rate hamesha high rahe.</p>
+        </div>
+
+        <div class="pro-item">
+            <h3>Lead Segmentation</h3>
+            <p>Direct confirmed students ka smart distribution. Region aur profile ke basis par data ko filter kiya jata hai targeted outreach ke liye.</p>
+        </div>
+
+        <div class="pro-item">
+            <h3>Admission Support</h3>
+            <p>Lead generation se enrollment tak ka end-to-end support. Hamari team coordination aur connectivity ka pura dhyan rakhti hai.</p>
+        </div>
+
+        <div class="pro-item">
+            <h3>Direct Connectivity</h3>
+            <p>Confirmed student admissions aur direct institutional coordination. Admission process ko fast aur transparent banane ka naya approach.</p>
+        </div>
+    </div>
+</section>
+
+<style>
+    .pro-offer-section {
+        background-color: #0b1d33; /* Your Theme Blue */
+        padding: 40px 20px; /* Kam margin/padding */
+        color: white;
+        font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    .pro-header {
+        text-align: left;
+        margin-bottom: 30px;
+    }
+
+    .pro-title {
+        font-size: 24px;
+        font-weight: 800;
+        color: #ffeb3b; /* Yellow Highlight */
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .pro-line {
+        height: 3px;
+        width: 40px;
+        background: #ffeb3b;
+        margin-top: 8px;
+        border-radius: 2px;
+    }
+
+    .pro-content {
+        display: flex;
+        flex-direction: column;
+        gap: 25px; /* Items ke beech ka gap */
+    }
+
+    .pro-item {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Simple Divider */
+        padding-bottom: 20px;
+    }
+
+    .pro-item:last-child {
+        border-bottom: none; /* Last item ke niche line nahi */
+    }
+
+    .pro-item h3 {
+        font-size: 18px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 8px;
+        text-transform: capitalize;
+    }
+
+    .pro-item p {
+        font-size: 14px;
+        line-height: 1.5;
+        color: #cbd5e0;
+        margin: 0;
+        opacity: 0.9;
+    }
+
+    /* Animation: Jab scroll karke yahan pauchenge tab trigger hoga */
+    .card-animate {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.8s ease-out;
+    }
+
+    .show-animation {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+    }
+</style>
+
+<script>
+    // Scroll Reveal Logic
+    document.addEventListener("DOMContentLoaded", function() {
+        const observerOptions = {
+            threshold: 0.2 // 20% section dikhne par animation shuru hogi
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show-animation');
+                }
+            });
+        }, observerOptions);
+
+        // Sirf is section ko observe karega
+        const target = document.querySelector('.pro-offer-section');
+        if(target) observer.observe(target);
+    });
+</script>
+
+
+
+<section class="skill-ladder-section">
+    <div class="bg-slider">
+        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1523050853064-dbad350c706a?auto=format&fit=crop&q=80');"></div>
+        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80');"></div>
+        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80');"></div>
+    </div>
+    
+    <div class="blue-overlay"></div>
+
+    <div class="content-wrapper">
+        <div class="skill-header">
+            <h2 class="ladder-title">Our Expert Foundation</h2>
+            <p class="ladder-subtitle">Our outreach and counselling teams are trained in:</p>
+        </div>
+
+        <div class="ladder-chart-container">
+            <div class="y-axis-label">
+                <p>Team Expertise Level</p>
+            </div>
+
+            <div class="ladder-graph">
+                <div class="graph-bar-item card-animate">
+                    <div class="bar-fill" style="height: 85%;"></div>
+                    <span class="bar-label">Student Psychology</span>
+                </div>
+
+                <div class="graph-bar-item card-animate">
+                    <div class="bar-fill" style="height: 90%;"></div>
+                    <span class="bar-label">Career Counselling Frameworks</span>
+                </div>
+
+                <div class="graph-bar-item card-animate">
+                    <div class="bar-fill" style="height: 75%;"></div>
+                    <span class="bar-label">Ethical Data Collection</span>
+                </div>
+
+                <div class="graph-bar-item card-animate">
+                    <div class="bar-fill" style="height: 95%;"></div>
+                    <span class="bar-label">Admission Counselling & Conversion</span>
+                </div>
+            </div>
+
+            <div class="x-axis-label">
+                <p>Counselling Team Trained In</p>
+            </div>
+        </div>
+
+        <div class="quality-statement card-animate">
+            <p>This ensures <strong>quality leads, not quantity noise.</strong></p>
+        </div>
+    </div>
+</section>
+
+<style>
+    .skill-ladder-section {
+        position: relative;
+        padding: 60px 20px;
+        color: white;
+        font-family: 'Inter', sans-serif;
+        overflow: hidden;
+        min-height: auto; /* Height content ke hisab se rahegi */
+    }
+
+    /* Background Slider Logic */
+    .bg-slider {
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 100%;
+        z-index: 1;
+    }
+
+    .slide {
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background-size: cover;
+        background-position: center;
+        opacity: 0;
+        transition: opacity 2s ease-in-out;
+        animation: slideShow 15s infinite;
+    }
+
+    .slide:nth-child(1) { animation-delay: 0s; }
+    .slide:nth-child(2) { animation-delay: 5s; }
+    .slide:nth-child(3) { animation-delay: 10s; }
+
+    @keyframes slideShow {
+        0% { opacity: 0; }
+        10% { opacity: 1; }
+        33% { opacity: 1; }
+        43% { opacity: 0; }
+        100% { opacity: 0; }
+    }
+
+    /* Transparent Blue Overlay */
+    .blue-overlay {
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background: rgba(11, 29, 51, 0.85); /* Dark blue with 85% opacity */
+        z-index: 2;
+    }
+
+    .content-wrapper {
+        position: relative;
+        z-index: 3; /* Sab content overlay ke upar */
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .skill-header { text-align: center; margin-bottom: 40px; }
+
+    .ladder-title {
+        font-size: 28px;
+        font-weight: 900;
+        color: #ffeb3b;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .ladder-subtitle { font-size: 15px; opacity: 0.9; margin-top: 10px; }
+
+    .ladder-chart-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        padding: 20px 0;
+    }
+
+    .y-axis-label {
+        position: absolute;
+        left: -50px;
+        top: 50%;
+        transform: translateY(-50%) rotate(-90deg);
+        white-space: nowrap;
+        font-size: 13px;
+        color: #cbd5e0;
+    }
+
+    .ladder-graph {
+        display: flex;
+        align-items: flex-end;
+        gap: 25px;
+        width: 100%;
+        height: 250px;
+        background: rgba(255, 255, 255, 0.05);
+        border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+        border-left: 2px solid rgba(255, 255, 255, 0.3);
+        padding-left: 10px;
+    }
+
+    .graph-bar-item {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        justify-content: flex-end;
+    }
+
+    .bar-fill {
+        width: 40%; /* Bar width 20% se bhi kam (refined look) */
+        background: linear-gradient(to top, #ffeb3b, #00d2ff);
+        border-radius: 5px 5px 0 0;
+        transition: height 1.5s ease-out;
+        box-shadow: 0 0 15px rgba(255, 235, 59, 0.3);
+    }
+
+    .bar-label {
+        font-size: 12px;
+        color: #fff;
+        text-align: center;
+        margin-top: 10px;
+        line-height: 1.3;
+        font-weight: 500;
+    }
+
+    .x-axis-label {
+        text-align: center;
+        margin-top: 15px;
+        font-size: 13px;
+        color: #cbd5e0;
+    }
+
+    .quality-statement {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 18px;
+    }
+
+    .quality-statement strong { color: #ffeb3b; font-weight: 800; }
+
+    /* Animation Styles */
+    .card-animate { opacity: 0; transform: translateY(20px); transition: all 0.8s ease-out; }
+    .show-animation { opacity: 1 !important; transform: translateY(0) !important; }
+</style>
+
+<script>
+    // Intersection Observer logic remains same as per your previous script
+    document.addEventListener("DOMContentLoaded", function() {
+        const observerOptions = { threshold: 0.3 };
+        const graphObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show-animation');
+                    entry.target.querySelectorAll('.graph-bar-item').forEach(barItem => {
+                        const barFill = barItem.querySelector('.bar-fill');
+                        if (barFill) {
+                            const targetHeight = barFill.style.height;
+                            barFill.style.setProperty('--bar-height', targetHeight);
+                            barFill.style.height = '0';
+                            setTimeout(() => {
+                                barFill.style.height = targetHeight;
+                            }, 100);
+                        }
+                    });
+                    graphObserver.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        const graphSection = document.querySelector('.ladder-graph');
+        if(graphSection) graphObserver.observe(graphSection);
+        
+        const statement = document.querySelector('.quality-statement');
+        if(statement) {
+            const obs = new IntersectionObserver((e) => {
+                if(e[0].isIntersecting) e[0].target.classList.add('show-animation');
+            }, {threshold: 0.5});
+            obs.observe(statement);
+        }
+    });
+</script>
+
+<section class="cta-section">
+    <div class="cta-container">
+        <div class="cta-content card-animate">
+            <h2 class="cta-title">Turn Outreach into Admissions</h2>
+            <p class="cta-subtitle">Partner with us to access <strong>verified, admission-ready students.</strong></p>
+            
+            <div class="commitment-box">
+                <h4 class="commitment-title">Our Commitment</h4>
+                <ul class="commitment-list">
+                    <li>Lower lead cost</li>
+                    <li>Shared admission success</li>
+                    <li>Long-term partnership</li>
+                </ul>
+            </div>
+
+            <button class="cta-button" onclick="openEnquireForm()">Partner With Us Now</button>
+        </div>
+    </div>
+</section>
+
+<style>
+    .cta-section {
+        background: #0b1d33;
+        padding: 80px 20px;
+        font-family: 'Inter', sans-serif;
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        position: relative;
+        z-index: 10;
+    }
+
+    .cta-container { max-width: 800px; margin: 0 auto; }
+
+    .cta-title {
+        font-size: 36px;
+        font-weight: 800;
+        color: #ffeb3b;
+        margin-bottom: 15px;
+        text-transform: capitalize;
+    }
+
+    .cta-subtitle {
+        font-size: 18px;
+        color: #e2e8f0;
+        margin-bottom: 30px;
+        line-height: 1.6;
+    }
+
+    .commitment-box {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 235, 59, 0.3);
+        padding: 25px;
+        border-radius: 15px;
+        margin-bottom: 40px;
+        display: inline-block;
+        text-align: left;
+    }
+
+    .commitment-title {
+        color: #ffeb3b;
+        font-size: 20px;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .commitment-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .commitment-list li {
+        color: #fff;
+        margin-bottom: 12px;
+        padding-left: 30px;
+        position: relative;
+        font-size: 16px;
+    }
+
+    .commitment-list li::before {
+        content: "✔";
+        position: absolute;
+        left: 0;
+        color: #ffeb3b;
+        font-weight: bold;
+    }
+
+    .cta-button {
+        background: #ffeb3b;
+        color: #0b1d33;
+        padding: 18px 45px;
+        font-size: 18px;
+        font-weight: 800;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 10px 25px rgba(255, 235, 59, 0.3);
+        text-transform: uppercase;
+        display: inline-block;
+    }
+
+    .cta-button:hover {
+        transform: scale(1.05);
+        box-shadow: 0 15px 35px rgba(255, 235, 59, 0.5);
+        background: #fff;
+    }
+
+    @media (max-width: 600px) {
+        .cta-title { font-size: 28px; }
+        .cta-button { width: 100%; padding: 15px; font-size: 16px; }
+        .commitment-box { width: 100%; box-sizing: border-box; }
+    }
+</style>
+
+<script>
+    function openEnquireForm() {
+        const popup = document.getElementById('contactPopup');
+        if (popup) {
+            popup.style.display = 'flex'; // Aapka popup flex ya block jo bhi ho
+        } else {
+            console.error("Popup with ID 'contactPopup' not found!");
+        }
+    }
+</script>
+
+<div class="ctr-vertical-trigger" onclick="openEnquireForm()">
+    <div class="pulse-ring"></div>
+    <span>BECOME OUR PARTNER</span>
+</div>
+
+<style>
+    .ctr-vertical-trigger {
+        position: fixed;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #ff0000; /* Pure Red for attention */
+        color: #ffffff;
+        padding: 20px 10px;
+        cursor: pointer;
+        z-index: 10000;
+        border-radius: 12px 0 0 12px;
+        box-shadow: -4px 0 20px rgba(255, 0, 0, 0.4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        border-left: 2px solid #ffffff;
+    }
+
+    .ctr-vertical-trigger span {
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        font-family: 'Inter', sans-serif;
+        font-weight: 900;
+        font-size: 14px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        white-space: nowrap;
+        pointer-events: none;
+    }
+
+    /* Pulse Effect to attract attention (CTR Boost) */
+    .pulse-ring {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 0, 0, 0.4);
+        border-radius: 12px 0 0 12px;
+        z-index: -1;
+        animation: ctr-pulse 2s infinite;
+    }
+
+    @keyframes ctr-pulse {
+        0% { transform: scale(1); opacity: 0.8; }
+        100% { transform: scale(1.3, 1.1); opacity: 0; }
+    }
+
+    /* Hover State */
+    .ctr-vertical-trigger:hover {
+        background: #ffffff;
+        color: #ff0000;
+        padding-right: 25px; /* Thoda bahar nikalta hai click encourage karne ke liye */
+        box-shadow: -6px 0 25px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Mobile optimization */
+    @media (max-width: 600px) {
+        .ctr-vertical-trigger {
+            padding: 15px 8px;
+            border-left: 1.5px solid #ffffff;
+        }
+        .ctr-vertical-trigger span {
+            font-size: 11px;
+            letter-spacing: 1px;
+        }
+    }
+</style>
+
+<script>
+    // Ye function aapke 'contactPopup' ko trigger karega
+    function openEnquireForm() {
+        const popup = document.getElementById('contactPopup');
+        if (popup) {
+            // Popup ko dikhane ke liye flex use ho raha hai
+            popup.style.display = 'flex';
+            
+            // Agar aapke popup mein koi specific animation class hai toh wo bhi add kar sakte hain
+            console.log("CTR Tab Clicked: Opening Enquire Form");
+        } else {
+            console.error("Error: Element with ID 'contactPopup' not found on this page.");
+        }
+    }
+</script>
